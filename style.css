@@ -1,0 +1,101 @@
+/* Reset da pagina  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;               /* Importando as fontes da Lista */
+}
+
+body {
+    background-image: url(./assets/BG.jpg);
+    background-repeat: no-repeat;
+
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(07px);
+        height: 100vh;
+        
+        .work-station {
+            width: 40%;
+            border-radius: 50px;
+            background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(5, 5, 5, 0.329));
+
+            .tittle {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h1 {
+                    font-family:"Bebas Neue";
+                    font-size: 60px;
+                }
+            }
+            
+            .filters {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 1.5rem;
+                gap: 1rem;
+                
+                button {
+                    height: 30px;
+                    width: 150px;
+                    border: 1px transparent;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 50ms ease 100ms;
+                    
+                    &:hover {
+                        font-weight: bold;
+                        font-size: 16px;
+                        background-color: black;
+                        color: #fff;
+
+                    }
+                }
+            }
+
+            .list-works {
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 1.5rem;
+                gap: 0.8rem;
+
+                .works {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: whitesmoke;
+                    height: 70px;
+                    border-radius: 50px;
+                    width: 500px;
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: transparent;
+                        border: none;
+
+                    }
+
+                    h3 {
+                        font-size: 25px;
+                    }
+                    
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+Lista de Tarefas
+
+Este é um projeto de Lista de Tarefas simples e interativa desenvolvida com HTML, CSS e JavaScript. Ele permite aos usuários adicionar, remover, marcar como concluídas e filtrar tarefas, além de alternar entre os modos claro e escuro.
+
+Recursos
+
+Adicionar novas tarefas
+
+Remover tarefas
+
+Marcar tarefas como concluídas
+
+Filtrar tarefas por status (todas, concluídas, não concluídas)
+
+Alternar entre tema claro e escuro
+
+Tecnologias Utilizadas
+
+HTML: Estrutura da aplicação
+
+CSS: Estilização e temas claro/escuro
+
+JavaScript: Lógica da aplicação, manipulação do DOM e armazenamento
+
+Como Executar o Projeto
+
+Clone este repositório:
+
+git clone ***
+
+Acesse a pasta do projeto:
+
+cd lista-de-tarefas
+
+Abra o arquivo index.html no navegador.
+
+Estrutura do Projeto
+
+lista-de-tarefas/
+│-- index.html
+│-- style.css
+│-- script.js
+│-- README.md
+
+Funcionalidades Detalhadas
+
+Tema Claro/Escuro
+
+O usuário pode alternar entre o modo claro e escuro, e a preferência é salva no armazenamento local para ser mantida entre sessões.
+
+Filtragem de Tarefas
+
+Os usuários podem visualizar todas as tarefas ou filtrar apenas as concluídas ou não concluídas.
+
+Melhorias Futuras
+
+Implementação de armazenamento persistente utilizando LocalStorage.
+
+Animações para melhorar a experiência do usuário.
+
+Opção para editar tarefas existentes.
+
+Contribuição
+
+Contribuições são bem-vindas! Para isso:
+
+Fork o repositório
+
+Crie um branch para sua feature (git checkout -b minha-feature)
+
+Commit suas mudanças (git commit -m 'Adicionando nova funcionalidade')
+
+Envie para o branch principal (git push origin minha-feature)
+
+Abra um Pull Request

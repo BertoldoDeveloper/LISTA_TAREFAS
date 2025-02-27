@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importando fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <!-- Importando icones do Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down,arrow_drop_up,delete,add" />
+    <!-- Importando o CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Let's Doing</title>
+  </head>
+  <body>
+    <!-- Cabecalho da Lista de Tarefas -->
+    <div class="container">
+      <div class="work-station">
+        <div class="tittle">
+          <h1>Let's Doing</h1>
+        </div>
+        <div class="filters">
+          <button>Todas</button>
+          <button>Concluidas</button>
+          <button>Não Concluidas</button>
+        </div>
+
+        <!-- Criando secao das Tarefas -->
+        <section class="list-works">
+          <div class="works">
+            <div class="details">
+              <h3>Arrumar a cama</h3>
+              <button>
+                Detalhes
+                <span class="material-symbols-outlined">arrow_drop_down</span>
+              </button>
+              <p>Assim que acordar, arrumar a cama</p>
+            </div>
+            <div class="add-remove">
+                <span class="material-symbols-outlined">delete</span>
+            </div>
+          </div>
+          <div class="works">
+            <div class="details">
+              <h3>Arrumar a Sala</h3>
+              <button>
+                Detalhes
+                <span class="material-symbols-outlined">arrow_drop_down</span>
+              </button>
+              <p>Terminou de assistir TV, arrumar a sala</p>
+            </div>
+            <div class="add-remove">
+                <span class="material-symbols-outlined">delete</span>
+            </div>
+          </div>
+          <div class="works">
+            <div class="details">
+              <h3>Estudar</h3>
+              <button>
+                Detalhes
+                <span class="material-symbols-outlined">arrow_drop_down</span>
+              </button>
+              <p>Separar 4 horas para estudar a materia do dia</p>
+            </div>
+            <div class="add-remove">
+                <span class="material-symbols-outlined">delete</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
