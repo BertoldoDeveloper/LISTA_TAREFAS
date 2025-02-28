@@ -21,7 +21,7 @@ body {
         height: 100vh;
         
         .work-station {
-            width: 40%;
+            width: 630px;
             border-radius: 50px;
             background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(5, 5, 5, 0.329));
 
@@ -72,19 +72,79 @@ body {
                 .works {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     background-color: whitesmoke;
-                    height: 70px;
                     border-radius: 50px;
-                    width: 500px;
 
-                    button {
-                        display: flex;
+                    .add-work {
+                        display: flex;                    
+                        justify-content: space-between;
                         align-items: center;
-                        justify-content: center;
-                        background-color: transparent;
-                        border: none;
-
+                        width: 500px;
+                        
+                        .details {
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 40px;
+    
+                            .btn-details {
+                                cursor: pointer;
+                                border: none;
+                                background-color: transparent;
+                                transition: all 50ms ease 100ms;
+    
+                                &:hover {
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+    
+                        .clear {
+                            display: flex;
+    
+                            .add, .remove {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                
+                            }
+                            
+                            .add {
+                                cursor: pointer;
+                                border-top-left-radius: 50px;
+                                border-bottom-left-radius: 50px;
+                                transition: all 50ms ease 100ms;
+        
+                                &:hover {
+                                    background-color: green;
+                                    box-shadow: -7px 5px 5px rgba(0, 0, 0, 0.3);
+                                    border: none;
+                                }
+                            }
+        
+                            .remove {
+                                cursor: pointer;
+                                border-top-right-radius: 50px;
+                                border-bottom-right-radius: 50px;
+                                transition: all 50ms ease 100ms;
+        
+                                &:hover {
+                                    background-color: red;
+                                    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.3);
+                                    border: none;
+                                }
+                            }
+        
+                            .btn-conclued, .btn-remove {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: transparent;
+                                border: none;
+                                cursor: pointer;
+                                height: 70px;
+                                width: 70px;
+                            }
+                        }
                     }
 
                     h3 {
@@ -92,7 +152,42 @@ body {
                     }
                     
                     p {
-                        display: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 40px;
+                    }
+                }
+            }
+
+            .editting {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+                gap: 1rem;
+
+                button {
+                    height: 30px;
+                    width: 150px;
+                    border: 1px transparent;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: all 50ms ease 100ms;
+                    
+                    &:hover {
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+                    
+                }
+
+                .btn-add {
+
+                    &:hover {
+                        background-color: green;
+                        color: #fff;
                     }
                 }
             }

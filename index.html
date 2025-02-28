@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <!-- Importando icones do Google -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down,arrow_drop_up,delete,add" />
     <!-- Importando o CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Importando icones do Fonte Awesome -->
+    <script src="https://kit.fontawesome.com/675faadc18.js" crossorigin="anonymous"></script>
 
     <title>Let's Doing</title>
   </head>
@@ -30,43 +30,43 @@
         <!-- Criando secao das Tarefas -->
         <section class="list-works">
           <div class="works">
-            <div class="details">
-              <h3>Arrumar a cama</h3>
-              <button>
-                Detalhes
-                <span class="material-symbols-outlined">arrow_drop_down</span>
-              </button>
-              <p>Assim que acordar, arrumar a cama</p>
+            <div class="add-work">
+              <div class="details">
+                <h3>Arrumar a cama</h3>
+                <button class="btn-details">
+                  Detalhes
+                  <i class="fa-solid fa-caret-down"></i>
+                </button>              
+              </div>
+              <div class="clear">
+                <div class="add">
+                  <button class="btn-conclued">
+                    <!-- Concluida -->
+                    <i class="fa-solid fa-check"></i>
+                  </button>
+                </div>
+                <div class="remove">
+                  <button class="btn-remove">
+                    <!-- Deletar -->
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="add-remove">
-                <span class="material-symbols-outlined">delete</span>
-            </div>
+            <p>Assim que acordar, arrumar a cama</p>
           </div>
-          <div class="works">
-            <div class="details">
-              <h3>Arrumar a Sala</h3>
-              <button>
-                Detalhes
-                <span class="material-symbols-outlined">arrow_drop_down</span>
-              </button>
-              <p>Terminou de assistir TV, arrumar a sala</p>
-            </div>
-            <div class="add-remove">
-                <span class="material-symbols-outlined">delete</span>
-            </div>
+        </section>
+
+        <section class="editting">
+          <div class="edit">
+            <button class="btn-edit">
+              Editar
+            </button>
           </div>
-          <div class="works">
-            <div class="details">
-              <h3>Estudar</h3>
-              <button>
-                Detalhes
-                <span class="material-symbols-outlined">arrow_drop_down</span>
-              </button>
-              <p>Separar 4 horas para estudar a materia do dia</p>
-            </div>
-            <div class="add-remove">
-                <span class="material-symbols-outlined">delete</span>
-            </div>
+          <div class="add">
+            <button class="btn-add">
+              Adicionar
+            </button>
           </div>
         </section>
       </div>
