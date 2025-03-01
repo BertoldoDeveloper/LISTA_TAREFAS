@@ -29,11 +29,12 @@
 
         <!-- Criando secao das Tarefas -->
         <section class="list-works">
-          <div class="works">
-            <div class="add-work">
+          <div class="works" id="task-list">
+            <div class="task" data-status="not-complete">
               <div class="details">
                 <h3>Arrumar a cama</h3>
-                <button class="btn-details">
+                <!-- Botao de detalhes  -->
+                <button class="btn-details" id="btnNone">
                   Detalhes
                   <i class="fa-solid fa-caret-down"></i>
                 </button>              
@@ -53,10 +54,14 @@
                 </div>
               </div>
             </div>
-            <p>Assim que acordar, arrumar a cama</p>
+            <!-- Detalhes da tarefa  -->
+            <div class="details-work">
+              <p id="detalisParagraph">Assim que acordar, arrumar a cama</p>
+            </div>
           </div>
         </section>
 
+        <!-- Adicionando botoes de "Concluido e Deletar" -->
         <section class="editting">
           <div class="edit">
             <button class="btn-edit">
@@ -71,5 +76,8 @@
         </section>
       </div>
     </div>
+
+    <!-- Adicionando o JavaScript  -->
+     <script src="./script.js"></script>
   </body>
 </html>
